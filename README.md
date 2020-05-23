@@ -10,11 +10,11 @@
    
    Note: Some wifi cameras directly support the mjpg streaming protocol with mjpg server capability.
 
-## 2. Client 1  
-
-   Hardware: TTGO T-WATCH
+## 2. Client 1
    
-   Directory: TTGO_T_Watch_See_Camera Need to adjust router account, password, Raspberry Pi IP
+   Hardware: TTGO T-WATCH
+
+   Directory: TTGO_T_Watch_See_Camera Need to adjust router account, password, Raspberry Pi IP
    
    Compilation tool arduino development board select TTGO T-Watch, set port, compile and burn to TTGO T-WATCH
    
