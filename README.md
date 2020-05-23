@@ -1,28 +1,46 @@
+# View remote camera with TTGO-T-Watch
 
-用TTGO-T-Watch手表查看远程摄像头
+## 1. The server:
 
-1.服务端：<BR/>
-   硬件:树莓派(带摄像头) <BR/>
-   目录:raspberry_server <BR/>
-   运行: python camera_server.py<BR/>
-   注：有些wifi摄像头直接硬件支持mjpg流协议，带mjpg服务器能力。
-
-2.客户端1<BR/> 硬件:TTGO T-WATCH <BR/>
-   目录: TTGO_T_Watch_See_Camera  需调整路由器账号，密码，树莓派IP<BR/>
-   编译工具 arduino 开发板选择 TTGO T-Watch, 设置端口，编译烧录至TTGO T-WATCH <BR/>
-   运行：开机，待连通到路由器上后，按第二个键查看远程摄像头摄像60秒
-   通过一次http交互读取远程摄像头一张图片，多次反复。 <BR/>演示功能，学习用 <br/>
-   FPS约1，每秒一张，速度慢<br/>
+   Hardware: Raspberry Pi (with camera)
    
- 3.客户端2<BR/>
-   上面的改进版<BR/>
-   硬件:TTGO T-WATCH <BR/>
-   目录: TTGO_T_Watch_See_mjpg   需调整路由器账号，密码，树莓派IP<BR/>
-   运行：开机，待连通到路由器上后，按第二个键不限时查看远程摄像头<BR/>
-   mjpg传输协议，请求一次，无限返回jpg图像，交互效率高<BR/>
-   FPS约6, 每秒6张, 时间主要消耗在解析jpg并图形显示,限于硬件水平，不容易提升
+   Directory: raspberry_server
    
-   硬件效果: <br/>
+   Run: python camera_server.py
+   
+   Note: Some wifi cameras directly support the mjpg streaming protocol with mjpg server capability.
+
+## 2. Client 1  
+
+   Hardware: TTGO T-WATCH
+   
+   Directory: TTGO_T_Watch_See_Camera Need to adjust router account, password, Raspberry Pi IP
+   
+   Compilation tool arduino development board select TTGO T-Watch, set port, compile and burn to TTGO T-WATCH
+   
+   Operation: Turn on the computer, and after connecting to the router, press the second button to view the remote camera camera for 60 seconds
+   
+   Read a picture from a remote camera through an http interaction, and repeat many times
+   Demo function for learning
+   
+   FPS is about 1, one per second, slow
+   
+## 3. Client 2
+
+   Improved version above
+   
+   Hardware: TTGO T-WATCH
+   
+   Directory: TTGO_T_Watch_See_mjpg Need to adjust router account, password, Raspberry Pi IP
+   
+   Operation: Turn on the computer, and after connecting to the router, press the second button to view the remote camera for an unlimited time
+   
+   mjpg transmission protocol, request once, return jpg images infinitely, high interaction efficiency
+   
+   FPS is about 6, 6 frames per second, the time is mainly spent in parsing jpg and graphic display, limited to hardware level, not easy to improve
+   
+   Hardware effect:
+   
    <img src= 'https://github.com/lixy123/TTGO_T_Watch_See_Camera/blob/master/TTGO_T_Watch_See_Camera/IMG_20200419_194214.jpg?raw=true' />
 <br/>
 <br/>
